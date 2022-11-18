@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useLocation } from 'react-router-dom';
 
 const pageVariants = {
     initial: {
@@ -16,10 +17,13 @@ const pageVariants = {
 const pageTransition = {
     type: 'tween',
     ease: 'linear',
-    duration: 0.5
+    duration: 0.8
 };
 
-export const Motion = ({ children }) => {
+export const MotionTag = ({ children }) => {
+
+    const { pathname } = useLocation()
+
     return (
         <motion.div
             key={pathname}

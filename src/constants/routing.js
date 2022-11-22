@@ -4,6 +4,8 @@ import { Layout } from '../pages/layout/Layout'
 import { UserManagement } from '../pages/user-management'
 import { UserAccount } from '../pages/user-management/user-account/User-Account'
 import { UserRole } from '../pages/user-management/user-role/User-Role'
+import { Setup } from '../pages/setup'
+import { Materials } from '../pages/setup/materials/Materials'
 
 function Routing() {
     let routing = useRoutes([
@@ -22,6 +24,16 @@ function Routing() {
                         {
                             path: 'user-role',
                             element: <UserRole />
+                        }
+                    ]
+                },
+                {
+                    path: 'setup',
+                    element: <Setup />,
+                    children: [
+                        {
+                            path: 'materials',
+                            element: <Materials />
                         }
                     ]
                 }

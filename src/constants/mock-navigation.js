@@ -6,13 +6,24 @@ export const Navigation = [
         children: [
             {
                 title: 'User Account',
-                path: 'user-account',
+                path: 'user-management/user-account',
             },
             {
                 title: 'User Role',
-                path: 'user-role',
+                path: 'user-management/user-role',
             }
         ]
-    }
+    },
+    {
+        title: 'Setup',
+        path: 'setup',
+        icon: '',
+        children: [
+            {
+                title: 'Materials',
+                path: 'setup/materials',
+            }
+        ]
+    },
 ]
 

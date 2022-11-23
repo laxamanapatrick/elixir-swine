@@ -11,11 +11,20 @@ export const theme = extendTheme({
     colors: {
         primary: "#65647C",
         secondary: "#8B7E74",
-        accent: "#F1D3B3",
+        accent: "#C7BCA1",
         warning: "#eed202",
         success: "#48bb78",
         danger: "#f56565",
-        table_accent: "#C7BCA1",
-        myWhite: "#e5e5e5"
+        table_accent: "#F1D3B3",
+        myWhite: "#e5e5e5",
+        myBlack: "#28282B",
+        // none: "#28282B",
+    },
+    components: {
+        Text: {
+            baseStyle: {
+                color: "#e5e5e5"
+            }
+        }
     }
 })

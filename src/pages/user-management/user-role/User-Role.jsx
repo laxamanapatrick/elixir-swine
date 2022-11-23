@@ -3,6 +3,6 @@ import React from 'react'
 
 export const UserRole = () => {
     return (
-        <Flex h='94vh' bgColor='teal.300'>HIIIII</Flex>
+        <Flex h='94vh' bgColor='primary'>HIIIII</Flex>
     )
 }

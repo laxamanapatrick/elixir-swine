@@ -12,9 +12,9 @@ export const Layout = () => {
     return (
         <>
             <NavigationPanel sidebarHandler={sidebarHandler} setSidebarHandler={setSidebarHandler} />
-            <VStack w='full' h='100vh' justifyContent='start' bgColor='black' px={2}>
+            <VStack w='full' h='100vh' justifyContent='start' bgColor='primary' p={5} spacing={1}>
                 <Header setSidebarHandler={setSidebarHandler} />
-                <ScrollFeature minHeight='60vh' maxHeight='95vh'>
+                <ScrollFeature minHeight='91.5vh' maxHeight='91.5vh'>
                     <Outlet />
                 </ScrollFeature>
             </VStack>

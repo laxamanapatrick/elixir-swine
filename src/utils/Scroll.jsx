@@ -9,6 +9,7 @@ export const ScrollFeature = ({ children, minHeight, maxHeight, width, scrollCol
             width={width ? width : 'full'}
             minHeight={minHeight ? minHeight : 'auto'}
             maxHeight={maxHeight ? maxHeight : 'auto'}
+            boxShadow='0px 3px 10px 0px rgba(40,40,43,1)'
             sx={{
                 "&::-webkit-scrollbar": {
                     height: "5px",
@@ -17,7 +18,7 @@ export const ScrollFeature = ({ children, minHeight, maxHeight, width, scrollCol
                     backgroundColor: `rgba(0, 0, 0, 0.05)`,
                 },
                 "&::-webkit-scrollbar-button:single-button": {
-                    backgroundColor: scrollColor ? scrollColor : "teal",
+                    backgroundColor: scrollColor ? scrollColor : "accent",
                     height: '12px',
                     width: '20px',
                     color: 'white',
@@ -32,10 +33,10 @@ export const ScrollFeature = ({ children, minHeight, maxHeight, width, scrollCol
                     backgroundImage: ''
                 },
                 "&::-webkit-scrollbar-thumb": {
-                    backgroundColor: scrollColor ? scrollColor : "teal",
+                    backgroundColor: scrollColor ? scrollColor : "accent",
                 },
                 "&::-webkit-scrollbar-thumb:hover": {
-                    backgroundColor: 'yellow',
+                    backgroundColor: 'accent',
                 },
                 '&::-webkit-scrollbar-track': {
                     boxShadow: 'inset 0 0 5px grey',

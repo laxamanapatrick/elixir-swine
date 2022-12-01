@@ -2,14 +2,14 @@ import React from 'react'
 import { Box } from '@chakra-ui/react';
 // import { CgArrowUpR, CgArrowDownR } from 'react-icons/cg'
 
-export const ScrollFeature = ({ children, minHeight, maxHeight, width, scrollColor }) => {
+export const ScrollFeature = ({ children, minHeight, maxHeight, width, scrollColor, boxShadow }) => {
 
     return (
         <Box overflowY="auto" overflowX="auto" m={0.5}
             width={width ? width : 'full'}
             minHeight={minHeight ? minHeight : 'auto'}
             maxHeight={maxHeight ? maxHeight : 'auto'}
-            boxShadow='0px 3px 10px 0px rgba(40,40,43,1)'
+            boxShadow={boxShadow === 'none' ? 'none' : '0px 3px 10px 0px rgba(40,40,43,1)'}
             sx={{
                 "&::-webkit-scrollbar": {
                     height: "5px",

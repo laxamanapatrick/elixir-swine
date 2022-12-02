@@ -1,6 +1,8 @@
 import React from 'react'
-import { Box } from '@chakra-ui/react';
-// import { CgArrowUpR, CgArrowDownR } from 'react-icons/cg'
+import { Box } from '@chakra-ui/react'
+import arrowUp from '../images/arrowup.png'
+import arrowDown from '../images/arrowdown.png'
+
 
 export const ScrollFeature = ({ children, minHeight, maxHeight, width, scrollColor, boxShadow }) => {
 
@@ -17,21 +19,6 @@ export const ScrollFeature = ({ children, minHeight, maxHeight, width, scrollCol
                     borderRadius: "1px",
                     backgroundColor: `rgba(0, 0, 0, 0.05)`,
                 },
-                "&::-webkit-scrollbar-button:single-button": {
-                    backgroundColor: scrollColor ? scrollColor : "accent",
-                    height: '12px',
-                    width: '20px',
-                    color: 'white',
-                    backgroundSize: '10px',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center 4px'
-                },
-                "&::-webkit-scrollbar-button:single-button:vertical:decrement": {
-                    backgroundImage: ''
-                },
-                "&::-webkit-scrollbar-button:single-button:vertical:increment": {
-                    backgroundImage: ''
-                },
                 "&::-webkit-scrollbar-thumb": {
                     backgroundColor: scrollColor ? scrollColor : "accent",
                 },
@@ -40,6 +27,26 @@ export const ScrollFeature = ({ children, minHeight, maxHeight, width, scrollCol
                 },
                 '&::-webkit-scrollbar-track': {
                     boxShadow: 'inset 0 0 5px grey',
+                },
+                "&::-webkit-scrollbar-button:single-button:vertical:decrement": {
+                    borderWidth: '0 8px 8px 8px',
+                    backgroundSize: 'cover',
+                    background: `url(${arrowUp}) 50% 50% / cover no-repeat !important`
+                },
+                "&::-webkit-scrollbar-button:single-button:vertical:decrement:hover": {
+                    borderColor: 'transparent transparent #777777 transparent',
+                    backgroundSize: 'cover',
+                    background: `url(${arrowUp}) 50% 50% / cover no-repeat !important`
+                },
+                " &::-webkit-scrollbar-button:single-button:vertical:increment": {
+                    borderWidth: '8px 8px 0 8px',
+                    backgroundSize: 'cover',
+                    background: `url(${arrowDown}) 50% 50% / cover no-repeat !important`
+                },
+                "&::-webkit-scrollbar-button:vertical:single-button:increment:hover": {
+                    borderColor: 'yellow',
+                    backgroundSize: 'cover',
+                    background: `url(${arrowDown}) 50% 50% / cover no-repeat !important`
                 }
             }}
         >

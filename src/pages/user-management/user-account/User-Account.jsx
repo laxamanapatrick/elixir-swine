@@ -8,13 +8,13 @@ export const UserAccount = () => {
 
   const userStatus = true
   const pageNumber = 1
-  const pageSize = 10
   const search = ''
+  const pageSize = 10
 
   const { data } = useFetchUsersApi(userStatus, pageNumber, pageSize, search)
-
+  
   console.log(data)
-
+  
   return (
     <VStack h='91.5vh' bgColor='primary' p={5}>
 

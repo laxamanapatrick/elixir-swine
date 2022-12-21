@@ -27,7 +27,7 @@ export const UserAccount = () => {
       </Flex>
 
       <Flex w='full'>
-        <ScrollFeature minHeight='50vh' maxHeight='70vh'>
+        <ScrollFeature maxHeight='70vh'>
           <Table variant='simple' size='sm'>
             <Thead position='sticky' zIndex='docked' top={0} bgColor='secondary'>
               <Tr>

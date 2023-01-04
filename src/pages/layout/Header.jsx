@@ -25,7 +25,7 @@ export const Header = ({ setSidebarHandler, selectedModule }) => {
                                     : <FaUserCircle color='#e5e5e5' fontSize='19px' />
                             }
                         </MenuButton>
-                        <MenuList w={300} bgColor='primary' border='none' borderRadius='none' boxShadow='rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'>
+                        <MenuList zIndex='modal' w={300} bgColor='primary' border='none' borderRadius='none' boxShadow='rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;'>
                             <MenuItem cursor='default' _hover={{ bg: 'none' }} _active={{ bg: 'none' }} _focus={{ bg: 'none' }}>
                                 <HStack>
                                     <FaUserCircle color='#e5e5e5' fontSize='60px' />

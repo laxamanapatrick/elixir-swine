@@ -18,7 +18,7 @@ export const useFetchUsersApi = (
         setPageTotal(res.data.totalCount);
         return res.data;
       } catch (error) {
-        console.log(error);
+        console.log("Data not fetched, please check your server");
       }
     }
   );
